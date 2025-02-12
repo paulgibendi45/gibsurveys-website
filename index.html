@@ -4,22 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>GibSurveys | Land & Engineering Surveying Services</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="GibSurveys offers top-notch land and engineering surveying services using modern technology and expert licensed surveyors." />
+  <meta name="keywords" content="surveying, land surveying, engineering surveying, GNSS, GIS, remote sensing, licensed surveyor" />
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Bootstrap Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
   <style>
     body {
       padding-top: 70px;
-      font-size: 0.9rem; /* Slightly smaller font */
+      font-size: 0.9rem;
       background-color: #ffffff;
       color: #000;
+      line-height: 1.6;
     }
     .navbar {
       background-color: #007BFF; /* Blue */
@@ -33,6 +31,7 @@
       text-align: center;
       color: #28a745; /* Green */
       font-size: 1.5rem;
+      text-transform: uppercase;
     }
     .carousel-item img {
       width: 100%;
@@ -44,18 +43,42 @@
       color: inherit;
       display: block;
       cursor: pointer;
+      transition: background-color 0.3s;
     }
     .list-group-item a:hover {
       background-color: #f8f9fa;
     }
-    /* Footer aligned to the right */
     footer {
       text-align: right;
     }
-    /* Bottom carousel styling */
     #bottomCarousel .carousel-item img {
       height: 300px;
       object-fit: cover;
+    }
+    /* Parallax Section */
+    .parallax {
+      background-image: url('https://via.placeholder.com/1920x600/28a745/ffffff?text=Excellence+in+Surveying');
+      min-height: 400px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+    /* Social Media Icons */
+    .social-icons a {
+      color: #007BFF;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #28a745;
     }
   </style>
 </head>
@@ -64,15 +87,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand" href="#">GibSurveys</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarContent"
-        aria-controls="navbarContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" 
+              aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarContent">
@@ -80,9 +96,10 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-          <li class="nav-item">
-            <a class="nav-link" href="#licensed">access a licensed surveyor from Here</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#licensed">access a licensed surveyor from Here</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#news">Latest News</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -93,37 +110,25 @@
   <section id="home" class="container-fluid p-0">
     <div id="topCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <!-- Slide 1: Total Station -->
+        <!-- Slide 1 -->
         <div class="carousel-item active">
-          <img
-            src="https://via.placeholder.com/1920x500/007BFF/ffffff?text=Total+Station"
-            class="d-block w-100"
-            alt="Total Station"
-          />
+          <img src="https://via.placeholder.com/1920x500/007BFF/ffffff?text=Total+Station" alt="Total Station" class="d-block w-100" />
           <div class="carousel-caption d-none d-md-block">
             <h5>Total Stations</h5>
             <p>State-of-the-art surveying equipment for precise measurements.</p>
           </div>
         </div>
-        <!-- Slide 2: GNSS Receiver -->
+        <!-- Slide 2 -->
         <div class="carousel-item">
-          <img
-            src="https://via.placeholder.com/1920x500/28a745/ffffff?text=GNSS+Receiver"
-            class="d-block w-100"
-            alt="GNSS Receiver"
-          />
+          <img src="https://via.placeholder.com/1920x500/28a745/ffffff?text=GNSS+Receiver" alt="GNSS Receiver" class="d-block w-100" />
           <div class="carousel-caption d-none d-md-block">
             <h5>GNSS Receivers</h5>
             <p>Accurate global positioning for all your survey needs.</p>
           </div>
         </div>
-        <!-- Slide 3: GIS & Remote Sensing -->
+        <!-- Slide 3 -->
         <div class="carousel-item">
-          <img
-            src="https://via.placeholder.com/1920x500/ffffff/007BFF?text=GIS+%26+Remote+Sensing"
-            class="d-block w-100"
-            alt="GIS & Remote Sensing"
-          />
+          <img src="https://via.placeholder.com/1920x500/ffffff/007BFF?text=GIS+%26+Remote+Sensing" alt="GIS & Remote Sensing" class="d-block w-100" />
           <div class="carousel-caption d-none d-md-block">
             <h5>GIS & Remote Sensing</h5>
             <p>Advanced geospatial data analysis and mapping solutions.</p>
@@ -141,6 +146,11 @@
     </div>
   </section>
 
+  <!-- Parallax Section -->
+  <section class="parallax">
+    <div>Experience Excellence in Surveying</div>
+  </section>
+
   <!-- Services Section -->
   <section id="services" class="container">
     <h2 class="section-title">Our Services</h2>
@@ -150,37 +160,70 @@
         <h3>Land Surveying Services</h3>
         <ul class="list-group mb-4">
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Boundary Surveys" data-description="Our Boundary Surveys service includes surveying precise property boundaries to ensure legal and accurate demarcations.">Boundary Surveys</a>
+            <a href="#" class="service-link" data-service="Boundary Surveys" 
+               data-description="Our Boundary Surveys service includes surveying precise property boundaries to ensure legal and accurate demarcations.">
+              Boundary Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Topographic Surveys" data-description="Topographic Surveys map the contours and features of the land for planning and construction purposes.">Topographic Surveys</a>
+            <a href="#" class="service-link" data-service="Topographic Surveys" 
+               data-description="Topographic Surveys map the contours and features of the land for planning and construction purposes.">
+              Topographic Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Construction Staking/Layout Surveys" data-description="We provide Construction Staking/Layout Surveys to accurately position structures for new construction projects.">Construction Staking/Layout Surveys</a>
+            <a href="#" class="service-link" data-service="Construction Staking/Layout Surveys" 
+               data-description="We provide Construction Staking/Layout Surveys to accurately position structures for new construction projects.">
+              Construction Staking/Layout Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="ALTA/NSPS Land Title Surveys" data-description="Our ALTA/NSPS Land Title Surveys comply with industry standards for real estate transactions and land title insurance.">ALTA/NSPS Land Title Surveys</a>
+            <a href="#" class="service-link" data-service="ALTA/NSPS Land Title Surveys" 
+               data-description="Our ALTA/NSPS Land Title Surveys comply with industry standards for real estate transactions and land title insurance.">
+              ALTA/NSPS Land Title Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Subdivision Surveys" data-description="Subdivision Surveys are performed to design and survey land subdivisions accurately.">Subdivision Surveys</a>
+            <a href="#" class="service-link" data-service="Subdivision Surveys" 
+               data-description="Subdivision Surveys are performed to design and survey land subdivisions accurately.">
+              Subdivision Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="GPS/GNSS Surveys" data-description="Utilizing advanced satellite positioning, our GPS/GNSS Surveys deliver high accuracy results.">GPS/GNSS Surveys</a>
+            <a href="#" class="service-link" data-service="GPS/GNSS Surveys" 
+               data-description="Utilizing advanced satellite positioning, our GPS/GNSS Surveys deliver high accuracy results.">
+              GPS/GNSS Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Aerial Surveying & Drone Mapping" data-description="We offer Aerial Surveying & Drone Mapping for high-resolution, comprehensive land data collection.">Aerial Surveying & Drone Mapping</a>
+            <a href="#" class="service-link" data-service="Aerial Surveying & Drone Mapping" 
+               data-description="We offer Aerial Surveying & Drone Mapping for high-resolution, comprehensive land data collection.">
+              Aerial Surveying & Drone Mapping
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Digital Mapping & GIS Data Collection" data-description="Our Digital Mapping & GIS Data Collection services create detailed digital maps and geospatial datasets.">Digital Mapping & GIS Data Collection</a>
+            <a href="#" class="service-link" data-service="Digital Mapping & GIS Data Collection" 
+               data-description="Our Digital Mapping & GIS Data Collection services create detailed digital maps and geospatial datasets.">
+              Digital Mapping & GIS Data Collection
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Control Surveys" data-description="Control Surveys establish precise reference points used in further engineering and construction projects.">Control Surveys</a>
+            <a href="#" class="service-link" data-service="Control Surveys" 
+               data-description="Control Surveys establish precise reference points used in further engineering and construction projects.">
+              Control Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Hydrographic Surveys" data-description="Hydrographic Surveys map underwater features for accurate marine and coastal planning.">Hydrographic Surveys</a>
+            <a href="#" class="service-link" data-service="Hydrographic Surveys" 
+               data-description="Hydrographic Surveys map underwater features for accurate marine and coastal planning.">
+              Hydrographic Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Title Search" data-description="Title Search services verify the legal ownership and history of a property.">Title Search</a>
+            <a href="#" class="service-link" data-service="Title Search" 
+               data-description="Title Search services verify the legal ownership and history of a property.">
+              Title Search
+            </a>
           </li>
         </ul>
       </div>
@@ -189,34 +232,64 @@
         <h3>Engineering Surveying Services</h3>
         <ul class="list-group mb-4">
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Site Layout Surveys" data-description="Our Site Layout Surveys ensure accurate layout for various infrastructure projects.">Site Layout Surveys</a>
+            <a href="#" class="service-link" data-service="Site Layout Surveys" 
+               data-description="Our Site Layout Surveys ensure accurate layout for various infrastructure projects.">
+              Site Layout Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="As-Built Surveys" data-description="As-Built Surveys document the exact dimensions and positions of completed structures.">As-Built Surveys</a>
+            <a href="#" class="service-link" data-service="As-Built Surveys" 
+               data-description="As-Built Surveys document the exact dimensions and positions of completed structures.">
+              As-Built Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Deformation & Monitoring Surveys" data-description="These surveys track structural movement and settlement over time for safety and maintenance.">Deformation & Monitoring Surveys</a>
+            <a href="#" class="service-link" data-service="Deformation & Monitoring Surveys" 
+               data-description="These surveys track structural movement and settlement over time for safety and maintenance.">
+              Deformation & Monitoring Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Structural Surveys" data-description="Structural Surveys assess the condition and integrity of buildings and other structures.">Structural Surveys</a>
+            <a href="#" class="service-link" data-service="Structural Surveys" 
+               data-description="Structural Surveys assess the condition and integrity of buildings and other structures.">
+              Structural Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Utility Surveys" data-description="Utility Surveys map underground and above-ground utilities for planning and construction.">Utility Surveys</a>
+            <a href="#" class="service-link" data-service="Utility Surveys" 
+               data-description="Utility Surveys map underground and above-ground utilities for planning and construction.">
+              Utility Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="High-Precision Geodetic Surveys" data-description="High-Precision Geodetic Surveys deliver extremely accurate measurements for complex projects.">High-Precision Geodetic Surveys</a>
+            <a href="#" class="service-link" data-service="High-Precision Geodetic Surveys" 
+               data-description="High-Precision Geodetic Surveys deliver extremely accurate measurements for complex projects.">
+              High-Precision Geodetic Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="3D Laser Scanning" data-description="3D Laser Scanning creates high-resolution 3D models of terrain and structures.">3D Laser Scanning</a>
+            <a href="#" class="service-link" data-service="3D Laser Scanning" 
+               data-description="3D Laser Scanning creates high-resolution 3D models of terrain and structures.">
+              3D Laser Scanning
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Road & Bridge Surveys" data-description="Our Road & Bridge Surveys provide detailed measurements for infrastructure development.">Road & Bridge Surveys</a>
+            <a href="#" class="service-link" data-service="Road & Bridge Surveys" 
+               data-description="Our Road & Bridge Surveys provide detailed measurements for infrastructure development.">
+              Road & Bridge Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Environmental Surveys" data-description="Environmental Surveys collect geospatial data for environmental assessments and planning.">Environmental Surveys</a>
+            <a href="#" class="service-link" data-service="Environmental Surveys" 
+               data-description="Environmental Surveys collect geospatial data for environmental assessments and planning.">
+              Environmental Surveys
+            </a>
           </li>
           <li class="list-group-item">
-            <a href="#" class="service-link" data-service="Construction Progress Surveys" data-description="Construction Progress Surveys monitor and document the progress of construction projects.">Construction Progress Surveys</a>
+            <a href="#" class="service-link" data-service="Construction Progress Surveys" 
+               data-description="Construction Progress Surveys monitor and document the progress of construction projects.">
+              Construction Progress Surveys
+            </a>
           </li>
         </ul>
       </div>
@@ -263,6 +336,85 @@
     </div>
   </section>
 
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="container">
+    <h2 class="section-title">Portfolio</h2>
+    <div class="row">
+      <!-- Portfolio Item 1 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x300/007BFF/ffffff?text=Project+1" class="card-img-top" alt="Project 1" />
+          <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">A successful boundary survey project.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Item 2 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x300/28a745/ffffff?text=Project+2" class="card-img-top" alt="Project 2" />
+          <div class="card-body">
+            <h5 class="card-title">Project 2</h5>
+            <p class="card-text">Topographic survey and mapping project.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio Item 3 -->
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x300/ffffff/007BFF?text=Project+3" class="card-img-top" alt="Project 3" />
+          <div class="card-body">
+            <h5 class="card-title">Project 3</h5>
+            <p class="card-text">Engineering survey for infrastructure planning.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="container">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="row">
+      <!-- Testimonial 1 -->
+      <div class="col-md-6 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">"GibSurveys provided exceptional service and accurate surveys for our project. Highly recommended!"</p>
+            <p class="card-text"><strong>- Client A</strong></p>
+          </div>
+        </div>
+      </div>
+      <!-- Testimonial 2 -->
+      <div class="col-md-6 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text">"The team was professional and delivered on time. Their technology is top-notch."</p>
+            <p class="card-text"><strong>- Client B</strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest News Section -->
+  <section id="news" class="container">
+    <h2 class="section-title">Latest News</h2>
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action">
+        <h5 class="mb-1">New Survey Technology Implemented</h5>
+        <p class="mb-1">We are excited to announce the integration of new high-precision surveying equipment.</p>
+        <small>Posted on February 10, 2025</small>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action">
+        <h5 class="mb-1">Award for Excellence in Surveying</h5>
+        <p class="mb-1">GibSurveys received an award for outstanding service and innovation in the surveying industry.</p>
+        <small>Posted on January 25, 2025</small>
+      </a>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="container">
     <h2 class="section-title">Contact Us</h2>
@@ -272,6 +424,23 @@
         <p><strong><i class="bi bi-telephone-fill"></i> Tel:</strong> <a href="tel:+254758394525">+254758394525</a></p>
         <p><strong><i class="bi bi-envelope-fill"></i> Email:</strong> <a href="mailto:gibendpaul@gmail.com">gibendpaul@gmail.com</a></p>
         <p><strong><i class="bi bi-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/254758394525" target="_blank">Chat with us on WhatsApp</a></p>
+        <!-- Inquiry Form (using mailto for simplicity) -->
+        <h4 class="mt-4">Inquiry Form</h4>
+        <form action="mailto:paulgibendi45@gmail.com" method="POST" enctype="text/plain">
+          <div class="mb-3">
+            <label for="inquiryName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="inquiryName" name="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="inquiryEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inquiryEmail" name="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="inquiryMessage" class="form-label">Message</label>
+            <textarea class="form-control" id="inquiryMessage" name="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        </form>
       </div>
       <div class="col-md-6">
         <h4>Our Locations</h4>
@@ -292,6 +461,22 @@
           <li>Thursday: 8:00 AM - 5:00 PM</li>
           <li>Friday: 8:00 AM - 1:00 PM</li>
         </ul>
+        <!-- Embedded Google Map -->
+        <h4>Find Us</h4>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.10332230664!2d36.82194657670728!3d-1.2920651166108933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d061d3b7f3%3A0x9b03fa1b935c0d2c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1587181728968!5m2!1sen!2sus" 
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+    <!-- Newsletter Subscription -->
+    <div class="row mt-4">
+      <div class="col">
+        <h4>Subscribe to Our Newsletter</h4>
+        <form action="mailto:paulgibendi45@gmail.com" method="POST" enctype="text/plain">
+          <div class="input-group mb-3">
+            <input type="email" class="form-control" placeholder="Your email" name="email" required />
+            <button class="btn btn-success" type="submit">Subscribe</button>
+          </div>
+        </form>
       </div>
     </div>
   </section>
@@ -300,29 +485,14 @@
   <section id="bottomCarouselSection" class="container-fluid p-0 my-4">
     <div id="bottomCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <!-- Bottom Slide 1 -->
         <div class="carousel-item active">
-          <img
-            src="https://via.placeholder.com/1920x300/007BFF/ffffff?text=Quality+Service"
-            class="d-block w-100"
-            alt="Quality Service"
-          />
+          <img src="https://via.placeholder.com/1920x300/007BFF/ffffff?text=Quality+Service" alt="Quality Service" class="d-block w-100" />
         </div>
-        <!-- Bottom Slide 2 -->
         <div class="carousel-item">
-          <img
-            src="https://via.placeholder.com/1920x300/28a745/ffffff?text=Expert+Team"
-            class="d-block w-100"
-            alt="Expert Team"
-          />
+          <img src="https://via.placeholder.com/1920x300/28a745/ffffff?text=Expert+Team" alt="Expert Team" class="d-block w-100" />
         </div>
-        <!-- Bottom Slide 3 -->
         <div class="carousel-item">
-          <img
-            src="https://via.placeholder.com/1920x300/ffffff/007BFF?text=Innovation"
-            class="d-block w-100"
-            alt="Innovation"
-          />
+          <img src="https://via.placeholder.com/1920x300/ffffff/007BFF?text=Innovation" alt="Innovation" class="d-block w-100" />
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#bottomCarousel" data-bs-slide="prev">
@@ -336,45 +506,28 @@
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer class="bg-dark text-white p-4">
-    <p class="mb-0">&copy; 2025 GibSurveys. All Rights Reserved.</p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2025 GibSurveys. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-6 text-end">
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Bootstrap JS and dependencies -->
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Tracking Script (Placeholder for Analytics & Email Notifications) -->
   <script>
-    // This placeholder script logs page views and click events to the console.
-    // To receive email updates (to paulgibendi45@gmail.com) regarding views and clicks,
-    // you must integrate a backend service or use a third-party analytics solution.
-    
-    function sendTrackingEvent(eventType, data = {}) {
-      console.log("Tracking event:", eventType, data);
-      // Example: Send the event to your backend for processing:
-      /*
-      fetch('https://your-backend-endpoint.com/track', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ eventType, data, email: 'paulgibendi45@gmail.com' })
-      });
-      */
-    }
-    
-    document.addEventListener('DOMContentLoaded', () => {
-      // Track page view event
-      sendTrackingEvent('page_view');
-      
-      // Attach click tracking to service links
-      document.querySelectorAll('.service-link').forEach(link => {
-        link.addEventListener('click', function() {
-          sendTrackingEvent('service_click', { service: this.getAttribute('data-service') });
-        });
-      });
-    });
-    
-    // Service modal handling
+    // Service Modal Handling
     document.querySelectorAll('.service-link').forEach(link => {
       link.addEventListener('click', function(event) {
         event.preventDefault();
